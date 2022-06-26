@@ -4,8 +4,10 @@ This repo contains header files for use with the breakout shield used in the 'Me
 
 ## Usage 
 The header files, if placed in the same directory as the Arduino '.ino' file, can be included with:
-    #include "buttonArray.h"
-    #include "display.h"
+```
+#include "buttonArray.h"
+#include "display.h"
+```
 
 They are written to specifically work with the following hardware:
 - 3.5" UNO 320x480 TFT Display Module (Driver: ILI0486);
@@ -16,6 +18,7 @@ These header files were written during my work as an assistant for the 'Medical 
 
 ## LICENSE
 The files are published under the following MIT License:
+
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.

@@ -11,6 +11,9 @@ They are written to specifically work with the following hardware:
 - 3.5" UNO 320x480 TFT Display Module (Driver: ILI0486);
 - 12 Buttons, wired normally high.
 
+## Credit
+These header files were written for the 'Medical Technology - Selected Digital Topics' lab course for the Biomedical Engineering Masters Program in the 2022 summer term at Lübeck University of Applied Sciences.
+
 ## LICENSE
 The files are published under the following MIT License:
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

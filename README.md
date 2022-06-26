@@ -12,7 +12,7 @@ They are written to specifically work with the following hardware:
 - 12 Buttons, wired normally high.
 
 ## Credit
-These header files were written for the 'Medical Technology - Selected Digital Topics' lab course for the Biomedical Engineering Masters Program in the 2022 summer term at Lübeck University of Applied Sciences.
+These header files were written during my work as an assistant for the 'Medical Technology - Selected Digital Topics' lab course for the Biomedical Engineering Masters Program in the 2022 summer term at Lübeck University of Applied Sciences.
 
 ## LICENSE
 The files are published under the following MIT License:

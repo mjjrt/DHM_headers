@@ -2,8 +2,19 @@
 
 This repo contains header files for use with the breakout shield used in the 'Medical Technology - Selected Digital Topics' lab course.
 
+## About this 
+This repo contains four important things:
+```
+buttonArray.h
+display.h
+button/
+examples/
+```
+About the first two, see the following paragraph.
+`button` contains a small library of two files, which is in essence an implementation of the Arduino Button library, but with an object oriented approach. The `Button` class can be implemented in an array, which makes initialization of more than a few buttons _really_ easy.
+
 ## Usage 
-The header files, if placed in the same directory as the Arduino '.ino' file, can be included with:
+The header files, if placed in the same directory as the Arduino `.ino` file, can be included with:
 ```
 #include "buttonArray.h"
 #include "display.h"

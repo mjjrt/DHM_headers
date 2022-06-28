@@ -1,12 +1,17 @@
-#include <Button.h>
+// Team Urban, 28Jun2022 WK
+// 
+// A header file to make life easier with the button array, which consists of discrete buttons.
+// This library treats these buttons as an Array.
+
+#include <Button.h> // Uses the popular Arduino Button Library
 
 #define NUM_BUTTONS 12
 const int buttonPins[] = {34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 52, 53}; // Button Pins 
 
-const int ledPin1 = 44;      // the number of the LED pin
+const int ledPin1 = 44;      // the numbers of the LED pins
 const int ledPin2 = 45;
 
-
+// Create button objects
 Button button1( buttonPins[0] );
 Button button2( buttonPins[1] );
 Button button3( buttonPins[2] );
@@ -23,6 +28,7 @@ Button buttonhash( buttonPins[11] );
 
 void ButtonSetup()
 {
+  // sets up the buttons
   button1.begin();
   button2.begin();
   button3.begin();
@@ -38,7 +44,9 @@ void ButtonSetup()
 }
 
 int CheckButtonStates()
-{
+{ 
+  // Checks buttons sequentially and returns their index. 
+  // Can be run in a loop; as the <Button.h> library implements debouncing.
   if (button1.pressed())
     return 0;
   else if (button2.pressed())
@@ -63,5 +71,7 @@ int CheckButtonStates()
     return 10;
   else if (buttonhash.pressed())
     return 11;
-  else return -1;
+
+  else return -1; // Default: Be careful when using this library to index into an array of types. 
+                  // Index "-1" WILL produce a segmentation fault.
 }

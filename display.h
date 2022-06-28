@@ -1,4 +1,4 @@
-// Team Urban, 01Jun2022 WK 
+// Team Urban, 28Jun2022 WK 
 //
 // This is a header file which does all the heavy lifting with the display.
 // You can use it as follows:
@@ -23,7 +23,7 @@
     }
 */
 
-
+// Include required libraries
 #include <Adafruit_GFX.h>
 #include <MCUFRIEND_kbv.h>
 
@@ -60,6 +60,7 @@
 
 MCUFRIEND_kbv tft; // initialize the tft object
 
+
 void DisplaySetup()
 {
     // Sets up the Display for use, only needs to run once in void setup()
@@ -82,6 +83,8 @@ void DisplayReset()
   tft.setCursor(0,0);
 }
 
+
+// Overloaded functions for drawing a number to the screen
 #define BOX_INSIDE_OFFSET 20
 void drawNumbertoScreen(String number)
 {
@@ -160,6 +163,7 @@ void drawBaronScreen(int length, int topleft)
 #define LINE_HEIGHT 2
 void drawLineBoxonScreen()
 {
+  // draws a line boxing in the lower quarter of the screen
   tft.drawFastHLine(0, LINEBOX_TOP, DISPLAY_WIDTH, WHITE);
   tft.drawFastHLine(0, LINEBOX_TOP+1, DISPLAY_WIDTH, WHITE);
   // tft.fillRect(0, LINEBOX_TOP, DISPLAY_WIDTH, LINE_HEIGHT, WHITE);

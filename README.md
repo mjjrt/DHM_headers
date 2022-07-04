@@ -5,10 +5,10 @@ This repo contains header files for use with the breakout shield used in the 'Me
 ## About this 
 This repo contains four important things:
 
-- buttonArray.h
-- display.h
-- button/
-- examples/
+- `buttonArray.h`
+- `display.h`
+- `button/`
+- `examples/`
 
 About the first two, see the following paragraph.
 `button` contains a small library of two files, which is in essence an implementation of the Arduino Button library, but with an object oriented approach. The `Button` class can be implemented in an array, which makes initialization of more than a few buttons _really_ easy.
